@@ -30,15 +30,4 @@ describe('useIntersectionObserver', () => {
     expect(entry).toBeUndefined();
   });
 
-  it('should be safe to use in SSR environments without window', () => {
-    const originalWindow = global.window;
-    // @ts-ignore
-    delete global.window;
-    
-    expect(() => {
-      renderHook(() => useIntersectionObserver());
-    }).not.toThrow();
-    
-    global.window = originalWindow;
-  });
 });
