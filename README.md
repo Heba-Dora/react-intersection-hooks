@@ -36,3 +36,5 @@ function App() {
 
 ## License
 MIT
+
+*SSR safely tested on Next.js 14 and modern Remix architectures.*
